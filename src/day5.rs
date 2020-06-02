@@ -39,11 +39,11 @@ fn do_reactions(input: &str) -> String {
                 i += 2;
                 continue;
             }
-            reacted_polymer.push(polymer[i-1]);
+            reacted_polymer.push(polymer[i - 1]);
             i += 1;
         }
         if i == polymer.len() {
-            reacted_polymer.push(polymer[i-1]);
+            reacted_polymer.push(polymer[i - 1]);
         }
         mem::swap(&mut polymer, &mut reacted_polymer);
         reacted_polymer.clear();
